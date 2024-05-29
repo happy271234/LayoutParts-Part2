@@ -1,1 +1,36 @@
 @charset "UTF-8";
+/*ブロックレベル要素は、親要素の幅を継承し、利用可能な最大幅まで自動的に広がる特性を持っています。*/
+/*インライン要素は、親要素の幅は継承せず、インライン要素に含まれるコンテンツ(文字など)の幅に基づいてサイズが決定されます。*/
+.header{
+  width: 100%;
+  background-color: #388bff;
+  position: fixed;
+  top:0;
+}
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.header-wrapper__logo{
+  padding-top: 30px;
+}
+.header-wrapper__logo a{
+  text-decoration: none;/*インラインにしかきかない*/
+  font-size: 24px;
+  font-weight: bold;
+  color:#f2ff7b;
+}
+.header-wrapper__navigation{
+  display: block;
+}
+.header-wrapper__navigation li{
+  display: inline-block;
+  padding: 30px;
+}
+.header-wrapper__navigation li a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffffff;
+}
