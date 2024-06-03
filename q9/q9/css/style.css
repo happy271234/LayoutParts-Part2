@@ -95,12 +95,16 @@ https://picsum.photos/id/1005/200/300   */
   width: 300px;
   padding: 20px;
   border: 1px solid #000000;
+  border-left: 0;
   background-color: #ffffff;
   transition: 0.5s;
 }
 .card:hover{
   box-shadow: 0px 0px 10px 3px #424242d0;
   z-index: 1;
+}
+.card:first-child{
+  border-left: 1px solid #000000;
 }
 .cardPicture{
   background-image: url(https://picsum.photos/id/1005/200/300);
